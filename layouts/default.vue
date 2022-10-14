@@ -106,6 +106,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-apps',
+          title: 'こんにちは！',
+          to: '/hello'
         }
       ],
       miniVariant: false,
