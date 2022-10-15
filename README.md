@@ -1,6 +1,17 @@
 # hello-nuxt
-Nuxt.js + Vuetifyお勉強用
 
-GitHub Pages＋DDNSで公開中
+## Nuxt2 + Vuetify2 お勉強テストコード
 
-http://t-vue.f5.si/
+SPA(CSR)で生成してGitHub Pages＋DDNSで公開中
+
+公開URL：http://t-vue.f5.si/ 
+
+## 郵便番号検索
+
+下記APIを利用して郵便番号を検索します
+
+https://zipcloud.ibsnet.co.jp/doc/api
+
+## 利用DDNS
+
+DDNS Now：https://ddns.kuku.lu/

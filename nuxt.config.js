@@ -3,11 +3,12 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - hello-nuxt',
-    title: 'hello-nuxt',
+    // titleTemplate: '%s - ',
+    title: '郵便番号検索',
     htmlAttrs: {
       lang: 'ja'
     },
