@@ -22,10 +22,11 @@
         </p>
         <p>
             <!-- 検索ボタン -->
-            <v-btn color="primary" :disabled="!valid" @click="search">検索</v-btn>
+            <v-btn color="primary" :disabled="!valid || loading" @click="search">検索</v-btn>
         </p>
-        <!-- 検索結果 -->
         <p>
+            <!-- 検索結果 -->
+            <v-progress-circular indeterminate color="gray" v-if="loading"></v-progress-circular>
             <v-data-table v-if="results != null" :headers="headers" :items="results" :items-per-page="5">
             </v-data-table>
         </p>
@@ -51,6 +52,8 @@ export default {
             v => v.length == 7 || '郵便番号は7桁で入力してください。',
             v => /[0-9-]{7,8}/.test(v) || '郵便番号はハイフンなしの数字で入力してください。',
         ],
+        // 検索中
+        loading: false,
         // 検索結果一覧ヘッダー
         headers: [
             { text: '郵便番号', value: 'zipcode', },
@@ -73,7 +76,8 @@ export default {
             this.warnText = null
             this.results = null
 
-            // 郵便番号検索API呼び出し
+            // 郵便番号検索API呼び出し開始
+            this.loading = true
             const url = 'https://zipcloud.ibsnet.co.jp/api/search?zipcode=' + this.zipcode
             axios.get(url).then(res => {
                 console.log(res.data)
@@ -92,6 +96,9 @@ export default {
             }).catch(err => {
                 // API呼び出し失敗
                 this.errorText = "検索APIの呼び出しに失敗しました。"
+            }).finally(() => {
+                // 検索終了
+                this.loading = false
             })
         },
     }
