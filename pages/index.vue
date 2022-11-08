@@ -1,5 +1,9 @@
 <template>
     <v-form v-model="valid">
+        <!-- ローディング表示(全画面) -->
+        <v-overlay :opacity="0.8" :value="loading">
+            <v-progress-circular indeterminate size="64"></v-progress-circular>
+        </v-overlay>
         <p>下記APIを利用して郵便番号を検索します</p>
         <p>
             <a href="https://zipcloud.ibsnet.co.jp/doc/api" target="_blank" rel="noopener noreferrer">
@@ -26,7 +30,6 @@
         </p>
         <p>
             <!-- 検索結果 -->
-            <v-progress-circular indeterminate color="gray" v-if="loading"></v-progress-circular>
             <v-data-table v-if="results != null" :headers="headers" :items="results" :items-per-page="5">
             </v-data-table>
         </p>
