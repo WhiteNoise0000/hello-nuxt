@@ -4,7 +4,7 @@
 
 SPA(CSR)で生成してGitHub Pages＋DDNSで公開中
 
-公開URL：http://t-vue.f5.si/ 
+公開URL：https://t-vue.f5.si/ 
 
 ## 郵便番号検索
 
