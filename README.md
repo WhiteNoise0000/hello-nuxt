@@ -2,9 +2,9 @@
 
 ## Nuxt2 + Vuetify2 お勉強テストコード
 
-SPA(CSR)で生成してGitHub Pages＋DDNSで公開中
+SPA(CSR)で生成してCloudflare Pagesで公開中
 
-公開URL：https://t-vue.f5.si/ 
+公開URL：https://hello-nuxt-c5g.pages.dev/
 
 ## 郵便番号検索
 
