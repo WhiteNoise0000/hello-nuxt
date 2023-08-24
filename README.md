@@ -2,7 +2,7 @@
 
 ## Nuxt3 + Vuetify3 お勉強テストコード
 
-Cloudflare Pagesで公開中
+Cloudflare Pagesで公開
 
 公開URL：https://hello-nuxt-c5g.pages.dev/
 
