@@ -1,8 +1,8 @@
 # hello-nuxt
 
-## Nuxt2 + Vuetify2 お勉強テストコード
+## Nuxt3 + Vuetify3 お勉強テストコード
 
-SPA(CSR)で生成してCloudflare Pagesで公開中
+Cloudflare Pagesで公開中
 
 公開URL：https://hello-nuxt-c5g.pages.dev/
 
@@ -12,6 +12,3 @@ SPA(CSR)で生成してCloudflare Pagesで公開中
 
 https://zipcloud.ibsnet.co.jp/doc/api
 
-## 利用DDNS
-
-DDNS Now：https://ddns.kuku.lu/
