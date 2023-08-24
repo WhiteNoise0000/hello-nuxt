@@ -35,6 +35,8 @@
 import { ref } from 'vue'
 import { VDataTable } from 'vuetify/labs/VDataTable'
 
+useHead({ title: '郵便番号検索' })
+
 const valid = ref(false)        // 検証ステータス
 const errorText = ref(null)     // エラーメッセージ
 const warnText = ref(null)      // 警告メッセージ
